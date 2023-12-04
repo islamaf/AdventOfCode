@@ -21,7 +21,7 @@ const joinNumbers = (arr) =>
 
 let calibrationValues = [];
 data.forEach((str) => {
-  const replaceWordNumbers = str.replace(re, (omatch) => numsEnum[match]);
+  const replaceWordNumbers = str.replace(re, (match) => numsEnum[match]);
   const x = replaceWordNumbers.replace(re, (match) => numsEnum[match])
   const numsArray = x.replace(/[^0-9]/g, "");
   calibrationValues.push(joinNumbers(numsArray));
